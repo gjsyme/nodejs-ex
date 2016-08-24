@@ -1,0 +1,30 @@
+nav(class="navbar navbar-default")
+  div.container-fluid
+    div.navbar-header
+      button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href="/")
+        span
+          img.nav-logo(src="/static/i/intercept.png")
+
+    div.collapse.navbar-collapse#bs-example-navbar-collapse-1
+      ul.nav.navbar-nav
+        li <a href="/startup">Startups</a>
+        li <a href="/institutional">Investors</a>
+        li.dropdown
+          a.dropdown-toggle(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") Enterprise <span class="caret"></span></a>
+          ul.dropdown-menu
+            li <a href="/academic">Intercept Academic</a>
+            li <a href="/incubator">Intercept Incubator</a>
+            li <a href="/library">Intercept Library</a>
+            li <a href="/nonprofit">Intercept NonProfit</a>
+      ul.nav.navbar-nav.navbar-right
+        if !comingsoon
+          if institutional || library
+            li <a id="trial-navbar-button" class="btn btn-success white" href="mailto:sales@dezinersoftware.com">Contact Sales</a>
+          else
+            li <a id="trial-navbar-button" class="btn btn-success white" href="https://app.dezinersoftware.com/onboarding">Get Started!</a>
+        li <a href="https://app.dezinersoftware.com/">Sign In</a>

@@ -1,0 +1,135 @@
+/*pretty much just a css for overrides on bootstrap*/
+body{
+  padding-bottom: 70px;
+  font-family: "Helvetica Neue Light", sans-serif
+}
+body.offwhite{
+  background-color: rgba(0,0,0,0.01);
+}
+.white{
+  color: white !important;
+}
+.font-copyright{
+  font-size: 12px;
+}
+.intercept-bg{
+  height: 600px;
+  background-image: url('/static/i/arbitrary-library.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.institutional-bg{
+  height: 600px;
+  background-image: url('/static/i/institutional.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.startup-bg{
+  height: 600px;
+  background-image: url('/static/i/chart.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.academic-bg{
+  height: 600px;
+  background-image: url('/static/i/academic.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.incubator-bg{
+  height: 600px;
+  background-image: url('/static/i/incubator.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.nonprofit-bg{
+  height: 600px;
+  background-image: url('/static/i/nonprofit.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.library-bg{
+  height: 600px;
+  background-image: url('/static/i/library.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.exchange-bg{
+  height: 600px;
+  background-image: url('/static/i/boardroom.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.overlay-text{
+  background-color: rgba(255,255,255,0.75);
+  border-radius: 5px;
+  padding: 20px;
+}
+.view-page{
+  min-height: 600px;
+  margin-bottom: 20px;
+}
+.product-thumbnail{
+  text-align: center;
+  background-color: rgba(47,159,215,1);
+  color: white !important;
+  height: 300px;
+}
+.function-table{
+  background-color: white;
+  border-radius: 5px;
+}
+.placeholder-bg{
+  background-color: rgba(47,159,215,1) !important;
+}
+i.fa-4x{
+  padding-top: 20px;
+}
+.tab-content{
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  min-height: 400px;
+  border-radius: 0px 0px 3px 3px;
+}
+img.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+a.light-link{
+  color: #0DFFCD;
+}
+a#trial-navbar-button:hover{
+  background-color: #419641 !important;
+}
+img.headshot{
+  height: 250px;
+  width: 250px;
+  border-radius: 3px;
+}
+img.small-logo{
+  height: 150px;
+  width: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+img.nav-logo{
+  height:30px;
+  width:40px;
+  border-radius: 5px;
+  margin-top: -5px;
+  background-color: white;
+}
+.investor-tile{
+  height: 600px;
+  background-image: url('/static/i/investors.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.entrepreneur-tile{
+  height: 600px;
+  background-image: url('/static/i/entrepreneur.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}

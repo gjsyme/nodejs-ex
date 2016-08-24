@@ -3,12 +3,15 @@ var express = require('express'),
     fs      = require('fs'),
     app     = express(),
     eps     = require('ejs'),
-    morgan  = require('morgan');
-    
+    morgan  = require('morgan'),
+    pug     = require('pug');
+
 Object.assign=require('object-assign')
 
 app.engine('html', require('ejs').renderFile);
-app.use(morgan('combined'))
+app.use(morgan('combined'));
+app.use('/static',express.static('public'));
+app.set('view engine', 'pug');
 
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
     ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
@@ -69,10 +72,10 @@ app.get('/', function (req, res) {
     // Create a document with request IP and current time of request
     col.insert({ip: req.ip, date: Date.now()});
     col.count(function(err, count){
-      res.render('index.html', { pageCountMessage : count, dbInfo: dbDetails });
+      res.render('index', { pageCountMessage : count, dbInfo: dbDetails });
     });
   } else {
-    res.render('index.html', { pageCountMessage : null});
+    res.render('index', { pageCountMessage : null});
   }
 });
 
